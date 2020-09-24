@@ -74,6 +74,7 @@ color: #0d3e60;
     margin-right: auto;
     display: flex;
     justify-content: center;
+    position: relative;
     }
     
 .header-names__name{
@@ -92,13 +93,15 @@ color: #0d3e60;
 border-radius: 50%;
 width: 91px;
 height: 91px;
-margin-left: 37px;
-margin-right: 37px;
 background-color: #ed543a;
 background-image: url(../img/icons/icon-heart.svg);
 background-repeat: no-repeat;
 background-position: center;
 position: relative;
+position: absolute;
+left: 50%;
+top: 0;
+transform: translate(-50%, 0%);
 }
 .header-names-button::after{
 content: "+";
@@ -121,9 +124,15 @@ border-radius: 50%;
 }
 .header-names-left{
 text-align: right;
+width: 50%;
+padding-right: 80px;
+padding-top: 10px;
 }
 .header-names-right{
 text-align: left;
+width: 50%;
+padding-left: 80px;
+padding-top: 10px;
 }
 .scroll__desc{
 font-size: 16.1px;
@@ -134,9 +143,6 @@ margin-bottom: 16px;
 text-align: center;
 }
 .scroll-bg{
-/* background-image: url(../img/icons/icon-heart.svg);
-background-repeat: no-repeat;
-background-position: center; */
 max-width: 750px;
 height: 122px;
 background-color: #fff9df;
