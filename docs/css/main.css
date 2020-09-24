@@ -13,11 +13,20 @@ body {
 }
 
 .container {
-	width: 1140px;
-	/*background-color: yellow;*/
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    position: relative;
 }
+/* Десктоп */
+@media (min-width: 1140px) {
+	.container{
+        width: 1140px;
+        padding: 0;
+    }
+	}
 p{
     margin-top: 0;
     margin-bottom: 15px;
@@ -150,3 +159,7 @@ display: inline-block;
 .form-label {
 	cursor: pointer;
 }
+.none{
+    display: none;
+}
+
