@@ -160,3 +160,9 @@ a.about__toggle,
 .about-content p{
     margin-bottom: 36px;
 }
+.about-content__box{
+    display: none;
+}
+.about-content__box:first-child{
+    display: block;
+}

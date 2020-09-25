@@ -17,6 +17,7 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container {
@@ -195,4 +196,43 @@ display: inline-block;
 .none{
     display: none;
 }
+.scrollToTop-wrapper {
+	display: none;
+	width: 81px;
+	height: 81px;
+	border-radius: 50px;
+	background-color: rgba(235, 82, 56, .2);
+	cursor: pointer;
+	
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
 
+
+@media (min-width: 1140px) {
+	.scrollToTop-wrapper {
+		right: 100px;
+		bottom: 100px;
+	}
+}
+
+.scrollToTop-icon {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+	width: 55px;
+	height: 55px;
+	background-color: #eb5238;
+	border-radius: 50px;
+	z-index: 2;
+	background-image: url("../img/icons/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -35,9 +35,10 @@ background-repeat: no-repeat;
 background-position: center;
 width: 118px;
 height: 77px;
-
-
+display: none;
 }
+
+
 .cloud-2{
     position: absolute;
     top: 263px;
@@ -47,8 +48,15 @@ height: 77px;
     background-position: center;
     width: 86px;
     height: 49px; 
+    display: none;
       
 }
+@media (min-width: 1140px){
+    .cloud-1, .cloud-2{
+        display: block;
+    }
+}
+
 .logo-wrapper {
 	display: flex;
 	flex-direction: column;
