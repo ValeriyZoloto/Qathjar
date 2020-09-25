@@ -85,7 +85,6 @@ height: 77px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 19.2px;
-	font-weight: 400;
 	height: 44px;
 	box-shadow: 4px 7px 7px rgba(41, 36, 17, 0.06);
 	background-color: #ffffff;
@@ -113,9 +112,7 @@ height: 77px;
 .tagline strong{
     font-weight: 700;
  }
-.align-end{
-align-items: flex-end;
-}
+
 .promises-counter{
 color: #0d3e60;
 }
@@ -149,12 +146,12 @@ color: #0d3e60;
     margin-right: auto;
 }
 .header__icon-mail{
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 .header__invite{
-margin-bottom: 24px;
+margin-bottom: 21px;
 font-size: 20px;
-line-height: 19px;
+line-height: 1;
 font-weight: 300;
 color: #eb5238;
 }
@@ -186,6 +183,33 @@ color: #0d3e60;
 
         }
     }
+    .header-names-left{
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 10px;
+        }
+        /* Десктоп */
+        @media (min-width:1141px){
+            .header-names-left{
+                text-align: right;
+                width: 50%;
+                padding-right: 80px;
+                padding-bottom: 0; 
+            }
+        }
+        .header-names-right {
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        @media (min-width: 1140px) {
+            .header-names-right {
+                text-align: left;
+                width: 50%;
+                padding-left: 80px;
+                padding-top: 10px;
+            }
+        }    
     
 .header-names__name{
 font-size: 22px;
@@ -252,35 +276,10 @@ color: #0d3e60;
 		line-height: 37px;
 	}
 }
-.header-names-left{
-text-align: center;
-padding-bottom: 50px;
-padding-top: 10px;
-}
-/* Десктоп */
-@media (min-width:1141px){
-    .header-names-left{
-        text-align: right;
-        width: 50%;
-        padding-right: 80px;
-		padding-bottom: 0; 
-    }
-}
-.header-names-right {
-	text-align: center;
-	padding-top: 50px;
-}
 
-@media (min-width: 1140px) {
-	.header-names-right {
-		text-align: left;
-		width: 50%;
-		padding-left: 80px;
-		padding-top: 10px;
-	}
-}
+
 .scroll__desc{
-font-size: 16.1px;
+font-size: 16px;
 line-height: 24px;
 font-weight: 300;
 color: #0d3e60;
@@ -338,7 +337,7 @@ background-position: center;
     background-position: center;
     }
 .scroll__title{
-    font-size: 18.1px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 500;
     color: #8d8b80;
@@ -380,4 +379,8 @@ background-position: center;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+
+
+
 
